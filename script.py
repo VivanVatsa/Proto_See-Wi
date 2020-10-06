@@ -13,7 +13,7 @@ print(img.ndim)
 
 # the pixels too big to fit in the window so gotta resize eh
 
-resized_image = cv2.resize(img,(1000, 700))
+resized_image = cv2.resize(img,(400, 1000))
 # cv2.imshow("Galaxy", img)
 cv2.imshow("Galaxy", resized_image)
 # cv2.waitKey(2000) #this acts in milliseconds
