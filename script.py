@@ -10,3 +10,7 @@ print(img)
 
 print(img.shape)
 print(img.ndim)
+
+cv2.imshow("Galaxy", img)
+cv2.waitKey(2000) #this acts in milliseconds
+cv2.destroyAllWindows()
