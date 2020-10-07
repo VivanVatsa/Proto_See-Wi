@@ -24,7 +24,8 @@ print(type(faces))
 print(faces)
 
 
-cv2.imshow("Gray Image", gray_img)
+# cv2.imshow("Gray Image", gray_img)
+cv2.imshow("Gray Image",img)
 cv2.waitKey(0)
 # 0 is for press any key when the window run then it closes
 cv2.destroyAllWindows()
