@@ -15,17 +15,16 @@ faces=face_cascade.detectMultiScale(gray_img,
 for x,y,w,h in faces:
     img=cv2.rectangle(img, (x,y), (x+w, y+h), (0,255,0), 3)
     # third tuple argument is for RGB color
-
-
-
-
-
+    
 print(type(faces))
 print(faces)
 
 
+resized=cv2.resize(img, (int(img.shape[1]/3), int(img.shape[0]/3)))
+
 # cv2.imshow("Gray Image", gray_img)
-cv2.imshow("Gray Image",img)
+# cv2.imshow("Gray Image",img)
+cv2.imshow("Gray Image",resized)
 cv2.waitKey(0)
 # 0 is for press any key when the window run then it closes
 cv2.destroyAllWindows()
