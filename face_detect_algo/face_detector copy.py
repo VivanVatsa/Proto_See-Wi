@@ -7,7 +7,7 @@ img=cv2.imread("news.jpg")
 gray_img=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-faces=face_cascade.detectMultiScale(gray_img, 
+faces=face_cascade.detectMultiScale(gray_img,
                                     scaleFactor=1.1,
                                     minNeighbors=5)
 
